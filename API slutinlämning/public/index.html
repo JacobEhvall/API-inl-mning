@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jacobs Awesome Website</title>
+
+
+    <!-- Används för att designa en enkel HTML sida  -->
+    <style>
+      html, body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;  
+    }
+    section { 
+      height: 100%;
+    }
+    </style>
+
+  <!-- Sätter id:en på de olika sakerna jag tar in på HTML sidan för att kunna referera till och sätta upp en enkel sida-->
+  </head>
+  <body>
+    <section id="allUsersSection">
+    <div>
+    <table>
+      <div>
+
+      <input type ="text" id="userNameField" placeholder="Enter your name..."></input>
+      <input type ="text" id="userEmailField" placeholder="Enter your email..."></input>
+      <button type="button" id="createUserButton">Create User</button>
+
+      </div>
+      <div><span id="errorMessage" style="color: red; display:none"></span></div>
+      <thead>      
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody id="userTable">
+
+    </tbody>
+    </table>
+  </div>
+  </section> 
+<section id="editSection" style="display: none;">
+  <button id="deleteUserButton">Delete</button>
+</section>
+  <script async="false"></script>
+  <script defer src='index.js'></script>
+  </body>
+</html> 
